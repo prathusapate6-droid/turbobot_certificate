@@ -15,7 +15,8 @@ import {
   Eye,
   Check,
   Building2,
-  FileCheck2
+  FileCheck2,
+  Users
 } from 'lucide-react';
 
 const WorkshopPortal: React.FC = () => {
@@ -255,6 +256,53 @@ const WorkshopPortal: React.FC = () => {
                   <div className="text-[11px] font-semibold text-slate-500 mt-0.5">Head – ETC</div>
                   <div className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
                     <Check className="w-3 h-3 text-emerald-600" /> Authorized
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Workshop Trainers Section */}
+            <div className="border-t border-slate-200 pt-8 mb-8">
+              <div className="flex items-center gap-2 text-xs font-black uppercase tracking-widest text-purple-700 mb-1">
+                <Users className="w-4 h-4 text-purple-600" />
+                <span>Workshop Trainers</span>
+              </div>
+              <p className="text-xs text-slate-500 mb-5">Hands-on technical sessions and robot assembling conducted by:</p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="p-5 rounded-2xl bg-gradient-to-b from-purple-50/70 to-white border border-purple-100 text-center shadow-xs hover:border-purple-300 transition-colors">
+                  <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight">
+                    Prathamesh Sapate
+                  </div>
+                  <div className="mt-2.5 inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-purple-700 text-white text-xs font-bold uppercase tracking-wider shadow-xs">
+                    Trainer
+                  </div>
+                  <div className="text-xs text-purple-700 mt-2 font-semibold">
+                    Department of ETC
+                  </div>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-gradient-to-b from-purple-50/70 to-white border border-purple-100 text-center shadow-xs hover:border-purple-300 transition-colors">
+                  <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight">
+                    Shreyash Pachade
+                  </div>
+                  <div className="mt-2.5 inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-purple-700 text-white text-xs font-bold uppercase tracking-wider shadow-xs">
+                    Trainer
+                  </div>
+                  <div className="text-xs text-purple-700 mt-2 font-semibold">
+                    Department of ETC
+                  </div>
+                </div>
+
+                <div className="p-5 rounded-2xl bg-gradient-to-b from-purple-50/70 to-white border border-purple-100 text-center shadow-xs hover:border-purple-300 transition-colors">
+                  <div className="text-lg sm:text-xl font-black text-slate-900 tracking-tight">
+                    Vansh Dhobale
+                  </div>
+                  <div className="mt-2.5 inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-purple-700 text-white text-xs font-bold uppercase tracking-wider shadow-xs">
+                    Trainer
+                  </div>
+                  <div className="text-xs text-purple-700 mt-2 font-semibold">
+                    Department of ETC
                   </div>
                 </div>
               </div>
