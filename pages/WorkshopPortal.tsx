@@ -24,7 +24,7 @@ const WorkshopPortal: React.FC = () => {
   const urlName = searchParams.get('name') || '';
 
   const [studentName] = useState(urlName);
-  const [department] = useState('Electronics & Telecommunication');
+  const [department] = useState('Electronics & Telecommunication (ENTC)');
   const [showCertModal, setShowCertModal] = useState(false);
 
   const highlights = [
@@ -80,7 +80,7 @@ const WorkshopPortal: React.FC = () => {
                 G H Raisoni University, Amravati
               </div>
               <div className="text-sm sm:text-base font-extrabold text-slate-900 leading-tight">
-                Department of Electronics &amp; Telecommunication
+                Department of Electronics &amp; Telecommunication (ENTC)
               </div>
             </div>
           </div>
@@ -186,7 +186,7 @@ const WorkshopPortal: React.FC = () => {
                   <span>Organized By</span>
                 </div>
                 <div className="text-lg font-black text-slate-900">
-                  Department of Electronics &amp; Telecommunication
+                  Department of Electronics &amp; Telecommunication (ENTC)
                 </div>
                 <div className="text-xs text-slate-500 mt-1">
                   G H Raisoni University, Amravati
@@ -253,7 +253,7 @@ const WorkshopPortal: React.FC = () => {
 
                 <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200 text-center">
                   <div className="text-xs font-extrabold text-slate-900">Dr. Shrikant P. Chavate</div>
-                  <div className="text-[11px] font-semibold text-slate-500 mt-0.5">Head – ETC</div>
+                  <div className="text-[11px] font-semibold text-slate-500 mt-0.5">Head – ENTC</div>
                   <div className="mt-2 inline-flex items-center gap-1 text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded-full">
                     <Check className="w-3 h-3 text-emerald-600" /> Authorized
                   </div>
@@ -278,7 +278,7 @@ const WorkshopPortal: React.FC = () => {
                     Trainer
                   </div>
                   <div className="text-xs text-purple-700 mt-2 font-semibold">
-                    Department of ETC
+                    Department of ENTC
                   </div>
                 </div>
 
@@ -290,7 +290,7 @@ const WorkshopPortal: React.FC = () => {
                     Trainer
                   </div>
                   <div className="text-xs text-purple-700 mt-2 font-semibold">
-                    Department of ETC
+                    Department of ENTC
                   </div>
                 </div>
 
@@ -302,7 +302,7 @@ const WorkshopPortal: React.FC = () => {
                     Trainer
                   </div>
                   <div className="text-xs text-purple-700 mt-2 font-semibold">
-                    Department of ETC
+                    Department of ENTC
                   </div>
                 </div>
               </div>
@@ -396,7 +396,7 @@ const WorkshopPortal: React.FC = () => {
       <footer className="bg-white border-t border-slate-200 py-8 px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <div className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-1">
-            Department of Electronics &amp; Telecommunication Engineering
+            Department of Electronics &amp; Telecommunication Engineering (ENTC)
           </div>
           <div className="text-xs text-slate-500 mb-3">
             G H Raisoni University, Amravati • turbobotcertificate.netlify.app
