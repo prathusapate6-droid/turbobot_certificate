@@ -28,7 +28,7 @@ import {
 const WorkshopPortal: React.FC = () => {
   const [searchParams] = useSearchParams();
   const urlId = searchParams.get('id') || 'GHRU-TB26-001';
-  const urlName = searchParams.get('name') || 'Prathamesh Sapate';
+  const urlName = searchParams.get('name') || '';
 
   const [searchId, setSearchId] = useState('');
   const [activeCertId, setActiveCertId] = useState(urlId);
@@ -217,17 +217,19 @@ const WorkshopPortal: React.FC = () => {
                 </div>
               </div>
 
-              {/* Participant Details */}
-              <div className="p-5 rounded-2xl bg-purple-50/50 border border-purple-100">
+              {/* Certificate Type */}
+              <div className="p-5 rounded-2xl bg-slate-50 border border-slate-100 hover:border-purple-200 transition-colors">
                 <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-purple-700 mb-1">
                   <FileCheck2 className="w-4 h-4 text-purple-600" />
-                  <span>Certified Participant</span>
+                  <span>Certificate Type</span>
                 </div>
-                <div className="text-xl font-black text-purple-950">
-                  {studentName}
+                <div className="text-lg font-black text-slate-900">
+                  {studentName ? studentName : 'Certificate of Participation'}
                 </div>
-                <div className="text-xs text-slate-600 mt-1">
-                  Department: <span className="font-semibold text-slate-800">{department}</span>
+                <div className="text-xs text-slate-500 mt-1">
+                  {studentName
+                    ? `Department: ${department}`
+                    : 'Official credential issued to verified workshop attendees of G H Raisoni University'}
                 </div>
               </div>
 
