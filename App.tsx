@@ -17,7 +17,8 @@ const App: React.FC = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
 
-  const isWorkshopRoute = pathname === '/' || pathname.startsWith('/verify') || pathname === '/certificate';
+  // If on main page or verify route, do NOT show the RoboRace competition header/footer
+  const isWorkshopRoute = pathname === '/' || pathname.startsWith('/verify') || pathname.startsWith('/certificate');
   const isAdminRoute = pathname.startsWith('/admin');
   const showRoboraceNav = !isWorkshopRoute && !isAdminRoute;
 
@@ -32,7 +33,7 @@ const App: React.FC = () => {
           <Route path="/verify/:certId" element={<WorkshopPortal />} />
           <Route path="/certificate" element={<WorkshopPortal />} />
 
-          {/* Secondary RoboRace Routes */}
+          {/* Secondary RoboRace Event Routes */}
           <Route path="/roborace" element={<Home />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/register" element={<Registration />} />
