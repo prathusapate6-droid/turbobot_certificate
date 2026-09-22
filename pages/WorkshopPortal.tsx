@@ -401,31 +401,7 @@ const WorkshopPortal: React.FC = () => {
           </div>
         )}
 
-        {/* Search Another Certificate Form */}
-        <div className="bg-white rounded-2xl border border-slate-200 p-6 mb-12 text-center shadow-sm">
-          <h3 className="text-base font-bold text-slate-900 mb-1">Verify Another Participant</h3>
-          <p className="text-xs text-slate-500 mb-4 max-w-md mx-auto">
-            Enter Certificate ID or Student Full Name to verify their workshop credential status.
-          </p>
-          <form onSubmit={handleVerifySearch} className="flex max-w-md mx-auto gap-2">
-            <div className="relative flex-1">
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
-              <input
-                type="text"
-                placeholder="e.g. GHRU-TB26-042 or Student Name"
-                value={searchId}
-                onChange={(e) => setSearchId(e.target.value)}
-                className="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-xs focus:outline-none focus:border-purple-600 focus:ring-1 focus:ring-purple-600"
-              />
-            </div>
-            <button
-              type="submit"
-              className="px-5 py-2.5 bg-purple-700 hover:bg-purple-800 text-white rounded-xl text-xs font-bold tracking-wider uppercase transition-colors"
-            >
-              Verify
-            </button>
-          </form>
-        </div>
+
 
         {/* Workshop Syllabus / Highlights Section (Exact from Poster) */}
         <div className="mb-14">
