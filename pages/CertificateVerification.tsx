@@ -77,7 +77,7 @@ const CertificateVerification: React.FC = () => {
                   Verified Official Certificate
                 </h2>
                 <p className="text-slate-600 text-sm mt-1">
-                  हे प्रमाणपत्र पूर्णपणे मूळ, अधिकृत आणि जी एच रायसोनी युनिव्हर्सिटी, अमरावती द्वारे पडताळणीकृत आहे.
+                  This certificate is officially verified, authentic, and registered with G H Raisoni University, Amravati.
                 </p>
                 <div className="mt-2 text-xs font-semibold text-emerald-700 flex items-center justify-center sm:justify-start gap-2">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>

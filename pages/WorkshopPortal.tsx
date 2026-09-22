@@ -172,7 +172,7 @@ const WorkshopPortal: React.FC = () => {
                   Original Authenticated Certificate
                 </h2>
                 <p className="text-emerald-100 text-xs sm:text-sm mt-0.5">
-                  हे प्रमाणपत्र पूर्णपणे मूळ, अधिकृत आणि जी एच रायसोनी युनिव्हर्सिटी द्वारे पडताळणीकृत आहे.
+                  This certificate is officially verified, authentic, and registered with G H Raisoni University, Amravati.
                 </p>
               </div>
             </div>
