@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Rules from './pages/Rules';
 import Registration from './pages/Registration';
 import Contact from './pages/Contact';
+import CertificateVerification from './pages/CertificateVerification';
 import AdminAuth from './pages/AdminAuth';
 import AdminDashboard from './pages/AdminDashboard';
 
@@ -26,6 +27,8 @@ const App: React.FC = () => {
           <Route path="/" element={<Home />} />
           <Route path="/rules" element={<Rules />} />
           <Route path="/register" element={<Registration />} />
+          <Route path="/verify" element={<CertificateVerification />} />
+          <Route path="/verify/:certId" element={<CertificateVerification />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/admin" element={<AdminAuth />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
