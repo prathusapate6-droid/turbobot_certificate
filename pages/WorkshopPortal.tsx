@@ -307,28 +307,20 @@ const WorkshopPortal: React.FC = () => {
               </div>
             </div>
 
-            {/* Action Buttons: View Certificate & Poster */}
+            {/* Action Buttons: View Certificate */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl bg-slate-900 text-white">
               <div>
                 <h3 className="font-bold text-sm sm:text-base">Original Verified Certificate</h3>
-                <p className="text-xs text-slate-400">View or download the official certificate containing this scannable QR verification.</p>
+                <p className="text-xs text-slate-400">View the official certificate format containing this scannable QR verification.</p>
               </div>
-              <div className="flex gap-3 w-full sm:w-auto">
+              <div>
                 <button
                   onClick={() => setShowCertModal(true)}
-                  className="flex-1 sm:flex-initial px-5 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-purple-600/30"
+                  className="px-6 py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-black text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2 shadow-lg shadow-purple-600/30"
                 >
                   <Eye className="w-4 h-4" />
                   View Certificate
                 </button>
-                <a
-                  href="/Assets/turbobot_certificate_with_qr.png"
-                  download="TurboBot_Certificate_Verified.png"
-                  className="px-4 py-3 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center gap-2"
-                >
-                  <Download className="w-4 h-4" />
-                  Download
-                </a>
               </div>
             </div>
 
@@ -359,16 +351,9 @@ const WorkshopPortal: React.FC = () => {
                 />
               </div>
               <div className="p-4 border-t border-slate-100 flex justify-end gap-3 bg-white">
-                <a
-                  href="/Assets/turbobot_certificate_with_qr.png"
-                  download="TurboBot_Certificate_Verified.png"
-                  className="px-5 py-2.5 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-bold text-xs flex items-center gap-2"
-                >
-                  <Download className="w-4 h-4" /> Download Certificate
-                </a>
                 <button
                   onClick={() => setShowCertModal(false)}
-                  className="px-4 py-2.5 rounded-xl bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold text-xs"
+                  className="px-6 py-2.5 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-bold text-xs"
                 >
                   Close
                 </button>
