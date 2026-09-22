@@ -84,19 +84,6 @@ const WorkshopPortal: React.FC = () => {
               </div>
             </div>
           </div>
-
-          <div className="flex items-center gap-3">
-            <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold">
-              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              Verification Live
-            </span>
-            <a
-              href="#verify-section"
-              className="px-4 py-2 rounded-xl bg-purple-700 hover:bg-purple-800 text-white font-bold text-xs uppercase tracking-wider transition-all shadow-sm shadow-purple-600/20"
-            >
-              Verify
-            </a>
-          </div>
         </div>
       </header>
 
